@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+android:screenOrientation="landscape"
+tools:context=".frm_verify_asset_location"
+    >
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="Verify Asset Location"
+    app:titleTextColor="@color/white"
+    android:background="#4BB543"
+    android:layout_marginBottom="5dp"
+    />
+
+
+<LinearLayout
+    android:id="@+id/btns"
+    android:layout_below="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:background="#D3D3D3"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="3dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_new"
+        android:text="NEW"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="3dp"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIST"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btns"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Location Sel."
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="#4BB543"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txt_location"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/txt_lv_req_no"
+                android:layout_weight="3"
+                android:background="#F5F5F5"
+                android:textIsSelectable="true"
+                android:hint="@string/location"
+                android:textColor="@color/black"
+                android:textColorHint="#808080" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Scan Asset"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="#4BB543"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+            <EditText
+                android:id="@+id/txtscan_asset"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColorHint="#808080"
+                android:layout_above="@+id/txt_lv_req_no"
+                android:background="#F5F5F5"
+                android:hint="@string/scanasset"
+                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:focusable="false"
+                android:enabled="true"
+                android:textIsSelectable="true"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtqty"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColorHint="#808080"
+                android:background="#F5F5F5"
+                android:hint="@string/quantity"
+                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Condition"
+                android:layout_weight="2.5"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_working"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working"
+                    android:layout_marginEnd="23dp"
+                    android:textStyle="bold"
+                    />
+                <RadioButton android:id="@+id/radio_notworking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Working"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtremarks"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColorHint="#808080"
+                android:background="#F5F5F5"
+                android:hint="@string/remarks"
+                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="QRcode Check"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtremarks1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColorHint="#808080"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/latTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude will be here! "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude will be here! "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

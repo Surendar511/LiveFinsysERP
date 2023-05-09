@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "448645928491",
+    "firebase_url": "https://finsysappversioncontroller-default-rtdb.firebaseio.com",
+    "project_id": "finsysappversioncontroller",
+    "storage_bucket": "finsysappversioncontroller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448645928491:android:4cf960315d9343b5583c6e",
+        "android_client_info": {
+          "package_name": "com.finsyswork.erp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448645928491-9a36p8302v46r36tau5k5fbecoln78g0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finsyswork.erp",
+            "certificate_hash": "43a5566bc78d6e2f5bedf541f5003afc4ad41cf7"
+          }
+        },
+        {
+          "client_id": "448645928491-ir3enfej24mm327054oa0fsnlcfkshop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkb8FHa6UPZVnCItHXvn4on_cuSOrV4wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448645928491-ir3enfej24mm327054oa0fsnlcfkshop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

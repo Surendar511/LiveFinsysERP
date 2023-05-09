@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+tools:context=".frm_crm_contacts_master"
+android:focusable="true"
+android:focusableInTouchMode="true">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="CRM Contacts Master"
+    app:titleTextColor="@color/white"
+    android:background="#4BB543"
+    android:layout_marginBottom="5dp"
+    />
+
+<LinearLayout
+    android:id="@+id/btns"
+    android:layout_below="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:background="#D3D3D3"
+    android:layout_marginEnd="3dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_new"
+        android:text="NEW"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="3dp"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIST"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btns"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Contact Company"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtcontact_company"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/contactcompany"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Contact person"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtcontact_person"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/contactperson"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Mobile No.*"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtmobile"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/emp_mobile"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/linear_wip_stage">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Contact Designation"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtcontact_designation"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/contactdesignation"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"
+                android:textIsSelectable="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/linear_remarks"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Deals In"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtdeals_in"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/dealsin"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Contact Of"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtcontact_of"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/contactof"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Reference Name"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtreference_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/referencename"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"
+                android:textIsSelectable="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Address (Line1)*"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtadd1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/address"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Address (Line2)"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtadd2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/address"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Address (Line3)"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtadd3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/address"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Address (Line4)"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtadd4"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/address"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="State"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtstate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/statename"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"
+                android:textIsSelectable="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Contact No.*"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtcontact_no"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/contactnumber"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Fax No."
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtfax_no"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/contactnumber"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Email Id"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/emailid"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Country Name"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtcountry_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/countryname"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"
+                android:textIsSelectable="true"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

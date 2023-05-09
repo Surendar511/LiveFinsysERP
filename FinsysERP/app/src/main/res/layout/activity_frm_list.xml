@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frm_list">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dt_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_from_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:hint="dd/MM/YYYY"
+                android:textColor="#0C0C0C"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginEnd="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_to_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:hint="dd/MM/YYYY"
+                android:layout_weight="1"
+                android:textColor="#0C0C0C"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btn_show"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Show"
+                android:background="#4BB543"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtRcount"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_search"
+            android:layout_below="@+id/dt_selection"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtSrch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:minWidth="350dp"
+                android:minHeight="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/dt_selection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+
+            <com.finsyswork.erp.TableFixHeader
+                android:id="@+id/sg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal|vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

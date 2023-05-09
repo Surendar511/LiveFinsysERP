@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_demo.xml" value="0.2" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm__lv__req.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_attend_maintenance_request.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_bar_scanner.xml" value="0.16197916666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_dispatch_entry.xml" value="0.20416666666666666" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_dispatch_finalise_mvin.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_fg_physical.xml" value="0.1234375" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_fg_stacking.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_fg_stacking_mvin.xml" value="0.16822916666666668" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_finish_production.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_inter_stage_tfr.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_issue_slip.xml" value="0.22146739130434784" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_jobw_prod.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_maintenance_request.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_material_issue_req.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_quality_inspection.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_record_arrival_truck.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_record_loading_truck.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_record_starting_truck.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_reel_issue_return.xml" value="0.20572916666666666" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_reel_return_mcpl.xml" value="0.20572916666666666" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_reels_stacking.xml" value="0.20572916666666666" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_scaninfo.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_select.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_frm_verify_asset_location.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/activity_main.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/app_bar_main.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/content_main.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/jobw_prod_input_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/list_item1.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/lv_req_report_card.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/material_issue_req_card_view.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/layout/truck_loading_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/menu/activity_main_drawer.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/menu/backmenu.xml" value="0.26458333333333334" />
+        <entry key="..\:/Shivam_project/FinsysERP/app/src/main/res/menu/main.xml" value="0.26458333333333334" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_attend_maintenance_request.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_dispatch_entry.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_fg_physical.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_fg_prod_qrcode.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_fg_stacking.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_issue_slip.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_jobw_prod.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/activity_frm_prod_entry.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/FinsysERP/app/src/main/res/layout/frm_select_app_bar_main.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm__lv__req.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_bar_scanner.xml" value="0.264" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_bin_scanning.xml" value="0.2125" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_dispatch_entry.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_fg_prod_qrcode.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_fg_stacking.xml" value="0.264" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_issue_slip.xml" value="0.264" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_material_issue_req.xml" value="0.4" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_quality_inspection.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_record_arrival_truck.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_record_loading_truck.xml" value="0.16614583333333333" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_record_starting_truck.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_reels_stacking.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/activity_frm_sale_schedule_booking.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/material_issue_req_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/scanner_bin_card_view.xml" value="0.2125" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/scanner_card_view.xml" value="0.2125" />
+        <entry key="..\:/Surendar/Live/10th_March/FinsysERP/app/src/main/res/layout/search_list_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_changeprofile.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm__lv__req.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_adv_pay.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_dispatch_entry.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_fg_physical.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_fg_prod_qrcode.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_fg_stacking.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_finish_production.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_issue_slip.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_jobw_prod.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_material_issue_req.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_online_inspection.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_packing_list.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_paper_end.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_print_pdf.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_prod_entry.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_quality_inspection.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_reel_issue_return.xml" value="0.2598958333333333" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_reels_stacking.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_scaninfo.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_task_done.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_verify_asset_location.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_visit_record.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_frm_wip_inspection.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_login.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/activity_main.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/attend_maintenance_req_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/input_value.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/jobw_prod_input_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/lv_req_report_card.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/quality_inspection_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/sale_order_schedule_booking_card_view.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/search_lead.xml" value="0.2635416666666667" />
+        <entry key="..\:/Surendar/Live/FinsysERP/app/src/main/res/layout/view_item_rptlevel50.xml" value="0.2635416666666667" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/drawable-v24/roundstyle.xml" value="1.121875" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_admin.xml" value="0.1328551912568306" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_attendance_detail.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_changepwd.xml" value="0.13984375" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm__lv__req.xml" value="0.1096311475409836" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_approval.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_approve.xml" value="0.15" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_attend_maintenance_request.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_bar_scanner.xml" value="0.17" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_crm_contacts_master.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_daily_expense.xml" value="0.11270491803278689" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_dispatch_entry.xml" value="0.1813759555246699" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_dispatch_finalise_mvin.xml" value="0.16" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_fg_physical.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_fg_stacking.xml" value="0.2" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_fg_stacking_mvin.xml" value="0.103515625" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_gate_pass.xml" value="0.18" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_graph.xml" value="0.13" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_inter_stage_tfr.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_invoice_entry.xml" value="0.12" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_issue_slip.xml" value="0.18" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_job_issue_entry.xml" value="0.1212431693989071" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_job_status.xml" value="0.1014344262295082" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_jobw_prod.xml" value="0.18" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_lead_enquiry.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_lead_sarfaraz.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_paper_end.xml" value="0.1212431693989071" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_print_pdf.xml" value="0.117578125" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_print_report.xml" value="0.25" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_quality_inspection.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_quotation.xml" value="0.18" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_record_arrival_truck.xml" value="0.2" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_record_loading_truck.xml" value="0.1290983606557377" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_record_starting_truck.xml" value="0.11441256830601093" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_reel_return_mcpl.xml" value="0.13422131147540983" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_reels_stacking.xml" value="0.1096311475409836" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_sale_order.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_select.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_frm_wip_inspection.xml" value="0.13984375" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_home.xml" value="0.1328551912568306" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_login.xml" value="0.11441256830601093" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/activity_pdf_viewer.xml" value="0.111328125" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/comman_card_view_for_recycler3.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/fifo_dialoge.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/frm_select_app_bar_main.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/frm_select_content_main.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/input_dialog_login.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/list_group1.xml" value="0.13984375" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/print_dialoge.xml" value="0.128125" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/quality_dialoge.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/search_lead.xml" value="0.18" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/ssearch_list_card_view.xml" value="0.13984375" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/time_picker_for_production.xml" value="0.12" />
+        <entry key="..\:/android Project/FinsysErp/app/src/main/res/layout/view_item_rptlevel50.xml" value="0.1" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/app/src/main/res/layout/activity_admin.xml" value="0.127734375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/app/src/main/res/layout/activity_attendance_detail.xml" value="0.127734375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/app/src/main/res/layout/activity_home.xml" value="0.127734375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/app/src/main/res/layout/activity_register_new_user.xml" value="0.127734375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/app/src/main/res/layout/item_attendance.xml" value="0.127734375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/app/src/main/res/layout/item_employee.xml" value="0.127734375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/app/src/main/res/menu/manage_attendance.xml" value="0.127734375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/imagerecognition/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.151953125" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/imagerecognition/src/main/res/drawable/textview_background.xml" value="0.151953125" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/imagerecognition/src/main/res/layout/activity_attendance_success.xml" value="0.129296875" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/imagerecognition/src/main/res/layout/activity_main_ir.xml" value="0.13984375" />
+        <entry key="..\:/android Project/FinsysErpFaceApp/FinsysErp/imagerecognition/src/main/res/menu/start_attendance_menu.xml" value="0.13984375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

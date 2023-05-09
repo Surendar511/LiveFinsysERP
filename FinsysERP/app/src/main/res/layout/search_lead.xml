@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/txtapi_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="150dp"
+            android:textColor="#D3D3D3"
+            />
+
+        <ImageView
+            android:id="@+id/close_window"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close_window"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search..."
+        android:singleLine="true"
+        />
+
+    <ListView
+        android:id="@+id/seach_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:clickable="true"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+        android:headerDividersEnabled="true"
+        />
+
+</LinearLayout>

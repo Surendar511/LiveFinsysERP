@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:screenOrientation="landscape"
+    tools:context=".frm_lv_req"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Leave Request"
+        app:titleTextColor="@color/white"
+        android:background="#4BB543"
+        android:layout_marginBottom="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:background="#D3D3D3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="3dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_new"
+            android:text="NEW"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginEnd="3dp"
+            />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:textColor="@color/white"
+            android:layout_marginEnd="3dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIST"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:textColor="@color/white"
+            android:layout_marginEnd="3dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:textColor="@color/white"
+            android:layout_marginEnd="3dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btns"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lv_Req_No "
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_lv_req_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#D3D3D3"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:hint="Lv Req No"
+                    android:text="-"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Lv_Req_Dt"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_lv_req_dt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txt_lv_req_no"
+                    android:layout_weight="3"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="dd/MM/YYYY"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:text="Approved By"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_approved_person"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textColor="#a020f0"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:text="EMP Mobile"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_emp_name"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/txt_lv_req_no"
+                    android:layout_weight="3"
+                    android:hint="@string/emp_mobile"
+                    android:textColorHint="#808080"
+                    android:completionThreshold="1"
+                    android:background="#F5F5F5"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:textIsSelectable="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Card No"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_card_no"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:textColorHint="#808080"
+                    android:layout_above="@+id/txt_lv_req_no"
+                    android:background="#F5F5F5"
+                    android:hint="@string/card_no"
+                    android:textColor="@color/black"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:id="@+id/linear_department">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Department"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_department"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="@string/dept"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:layout_weight="3"
+                    android:completionThreshold="1"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:textIsSelectable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:id="@+id/linear_designation">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Designation"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_designation"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="@string/designation"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:layout_weight="3"
+                    android:completionThreshold="1"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:textIsSelectable="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:id="@+id/linear_lave_type">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Type"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_leave_type"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="@string/leavetype"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:layout_weight="3"
+                    android:completionThreshold="1"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:textIsSelectable="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reason"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="@string/reason"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:layout_weight="3"
+                    android:completionThreshold="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Start Dt"
+                    android:textStyle="bold"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/txt_lv_start_dt"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/date"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#F5F5F5"
+                    android:layout_weight="3.1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Time"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/txt_leave_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.1"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#F5F5F5"
+                    android:background="@android:drawable/editbox_background"
+                    android:textColorHint="#808080"
+                    android:hint="@string/time"
+                    android:textColor="@color/black"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Leave End Dt"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/txt_leave_end_dt"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/black"
+                    android:layout_height="50dp"
+                    android:textColorHint="#808080"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/date"
+                    android:backgroundTint="#F5F5F5"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Return Time"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/txt_return_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.1"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#F5F5F5"
+                    android:background="@android:drawable/editbox_background"
+                    android:textColorHint="#808080"
+                    android:hint="@string/time"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Total Days"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_total_days"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:hint="@string/tdays"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Time In Hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_time_in_hr"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="Hours:minutes"
+                    android:singleLine="true"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="AltContact Person"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_grade"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:textColorHint="#808080"
+                    android:background="#F5F5F5"
+                    android:hint="@string/acp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="AltContact Number"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_cur_salary"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:textColorHint="#808080"
+                    android:background="#F5F5F5"
+                    android:hint="@string/acn"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Section"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_section"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:textColorHint="#808080"
+                    android:hint="Section"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Service Year No"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_service_year_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:textColorHint="#808080"
+                    android:background="#F5F5F5"
+                    android:textColor="@color/black"
+                    android:hint="Service Year No"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/linear_air_line">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Airline Name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_loan_paid"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:hint="@string/airlinename"
+                    android:singleLine="true"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Dest From"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_inst_amt"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="@string/destfrom"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Dest To"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_dest_to"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:textColorHint="#808080"
+                    android:hint="@string/destto"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/linear_ticket_no">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Ticket No"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_ticket_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="@string/ticketno"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Add"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/txt_leave_add"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:hint="@string/leaveadd"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Remarks"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/txt_remarks"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:background="#F5F5F5"
+                    android:hint="@string/remarks"
+                    android:textColorHint="#808080"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

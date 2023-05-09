@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+tools:context=".frm_record_loading_truck"
+android:focusable="true"
+android:focusableInTouchMode="true">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="Truck Loading"
+    app:titleTextColor="@color/white"
+    android:background="#4BB543"
+    android:layout_marginBottom="5dp"
+    />
+
+<LinearLayout
+    android:id="@+id/btns"
+    android:layout_below="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:background="#D3D3D3"
+    android:layout_marginEnd="3dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_new"
+        android:text="NEW"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="3dp"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIST"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#337ab7"
+        android:textColor="@color/white"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btns"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Location"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtlocation"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/location"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Select Vehicle"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txttruck_arrived"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/selectvehicle"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/linear_wip_stage"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Loading Started"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.5">
+                <RadioButton android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:layout_marginEnd="23dp"
+                    android:textStyle="bold"
+                    />
+                <RadioButton android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:textStyle="bold"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/linear_remarks"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:width="55dp"
+                android:textColor="@color/black"
+                android:text="Loading Supervisor"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtloading_supervisor"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/loadingsupervisor"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/txtviewCustomer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Customer"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+            <EditText
+                android:id="@+id/txtcustomer"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/customerdestination"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/latTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude will be here! "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/lonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude will be here! "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@color/light_blue"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Del"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="0.2"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1.5"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1.5"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_weight="1.5"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_menu_camera"
+                android:id="@+id/btncamera"/>
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/erp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageResultx"
+                >
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <AnalogClock
+                android:layout_marginTop="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <DigitalClock
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

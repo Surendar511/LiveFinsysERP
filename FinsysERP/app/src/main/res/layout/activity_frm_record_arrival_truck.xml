@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+tools:context=".frm_record_arrival_truck"
+android:focusable="true"
+android:focusableInTouchMode="true">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="Truck Arrival"
+    app:titleTextColor="@color/white"
+    android:background="#4BB543"
+    android:layout_marginBottom="5dp"
+    />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="3dp"
+        android:background="#D3D3D3"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:text="NEW"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:text="LIST"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btns"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lat  : "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/latTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude will be here! "
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long  : "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/lonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude will be here! "
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Location"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtlocation"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/location"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Vehicle"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txttruck_arrived"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:textAllCaps="true"
+                android:hint="@string/selectvehicle"
+                android:inputType="textCapCharacters"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:enabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/linear_wip_stage">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Driver Name"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtdriver_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/drivername"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Driver Number"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtdriver_number"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/drivernumber"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Vehicle KM Reading"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtvehicle_reading"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/vehiclereading"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/linear_transporter"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Transporter"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txttransporter"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="#F5F5F5"
+                android:completionThreshold="1"
+                android:enabled="true"
+                android:focusable="false"
+                android:hint="@string/selecttransporter"
+                android:textColor="@color/black"
+                android:textColorHint="#808080" />
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/linear_remarks"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:text="Remarks"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <EditText
+                android:id="@+id/txtremarks"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="@string/remarks"
+                android:textColorHint="#808080"
+                android:completionThreshold="1"
+                android:background="#F5F5F5"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Click Image"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="3dp"
+                android:textSize="18dp"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_menu_camera"
+                android:id="@+id/btncamera"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/erp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageResultx"
+                >
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+        <AnalogClock
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <DigitalClock
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

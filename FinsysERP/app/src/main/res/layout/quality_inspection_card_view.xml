@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgremove"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/remove"
+        android:layout_weight="0.3"
+        android:layout_marginEnd="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtcard_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item"
+        android:width="100dp"
+        android:layout_weight="1.2"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtcard_okqty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:width="100dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtcard_rejqty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rej"
+        android:width="100dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtcard_reason"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reason"
+        android:width="100dp"
+        android:layout_weight="0.7"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+
+</LinearLayout>

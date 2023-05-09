@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgremove"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/remove"
+        android:layout_weight="0.3"
+        android:layout_marginEnd="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtcard_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item"
+        android:width="150dp"
+        android:layout_weight="0.7"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtcard_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Batch"
+        android:width="70dp"
+        android:layout_weight="1.6"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtcard_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Qty"
+        android:width="150dp"
+        android:layout_weight="0.5"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtcard_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:layout_weight="0.5"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

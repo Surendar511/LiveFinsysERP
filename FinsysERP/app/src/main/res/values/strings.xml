@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">Finsys @Work</string>
+    <string name="expense_api">EP822</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="output"><u><b><i>Output</i></b></u></string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_login">Login to Finsys</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <!--   Hint For EditText  -->
+    <string name="emp_name"><font size="15">Emp Name</font></string>
+    <string name="address"><font size="15">Address</font></string>
+    <string name="vehicle"><font size="15">Vehicle</font></string>
+    <string name="pono"><font size="15">Party P.O. No.</font></string>
+    <string name="enquiryno"><font size="15">Enquiry No.</font></string>
+    <string name="inform"><font size="15">Inform To</font></string>
+    <string name="designation"><font size="15">Designation</font></string>
+    <string name="okqty"><font size="15">OK Qty.</font></string>
+    <string name="rejqty"><font size="15">REJECT Qty.</font></string>
+    <string name="rate"><font size="15">rate</font></string>
+    <string name="card_no"><font size="15">Card No</font></string>
+    <string name="reason"><font size="15">Reason</font></string>
+    <string name="date"><font size="15">dd/MM/YYYY</font></string>
+    <string name="time"><font size="15">--:--</font></string>
+    <string name="tdays"><font size="15">Total Days</font></string>
+    <string name="expensename"><font size="15">Expense Name</font></string>
+    <string name="acp"><font size="15">Alt Contact Person</font></string>
+    <string name="acn"><font size="15">Alt Contact Number</font></string>
+    <string name="airlinename"><font size="15">Airline Name</font></string>
+    <string name="destfrom"><font size="15">Dest From</font></string>
+    <string name="destto"><font size="15">Dest To</font></string>
+    <string name="ticketno"><font size="15">Ticket No</font></string>
+    <string name="leaveadd"><font size="15">Leave Add</font></string>
+    <string name="attendby"><font size="15">Attend By</font></string>
+    <string name="remarks"><font size="15">Remarks</font></string>
+    <string name="Paidto"><font size="15">Paid To</font></string>
+    <string name="contactof"><font size="15">Contact Of</font></string>
+    <string name="dealsin"><font size="15">Deals In</font></string>
+    <string name="issueobserved"><font size="15">Issue Observed</font></string>
+    <string name="correctiveact"><font size="15">Corrective Act</font></string>
+    <string name="preventiveact"><font size="15">Preventive Act</font></string>
+    <string name="typeofinspection"><font size="15">Type Of Inspection</font></string>
+    <string name="dept"><font size="15">Department</font></string>
+    <string name="type"><font size="15">Select Type</font></string>
+    <string name="grade"><font size="15">Grade</font></string>
+    <string name="cursalary"><font size="15">Current Salary</font></string>
+    <string name="advsalary"><font size="15">Advance Request</font></string>
+    <string name="instamt"><font size="15">Inst Amt</font></string>
+    <string name="loanpaid"><font size="15">Loan Request</font></string>
+    <string name="bomnumber"><font size="15">BOM Number</font></string>
+    <string name="itemcode"><font size="15">Item Code</font></string>
+    <string name="metwith"><font size="15">Met With</font></string>
+    <string name="company"><font size="15">Company Name</font></string>
+    <string name="result"><font size="15">Result</font></string>
+    <string name="meet"><font size="15">To Meet</font></string>
+    <string name="ref"><font size="15">Reference</font></string>
+    <string name="purpose"><font size="15">Purpose</font></string>
+    <string name="materialcaried"><font size="15">Material Caried</font></string>
+    <string name="amount"><font size="15">Amount</font></string>
+    <string name="leadsource"><font size="15">Lead Source</font></string>
+    <string name="industryvertical"><font size="15">Industry/Vertical</font></string>
+    <string name="leadprobability"><font size="15">Inquiry/Lead Probability</font></string>
+    <string name="lead"><font size="15">Lead Select</font></string>
+    <string name="action"><font size="15">Select Action</font></string>
+    <string name="lastjobcomplaint"><font size="15">See Last Job</font></string>
+    <string name="instructiontofollow"><font size="15">Instruction To Follow</font></string>
+    <string name="attendance"><font size="15">Attendace</font></string>
+    <string name="leavetype"><font size="15">Select Leave Type</font></string>
+    <string name="fgsubgroup"><font size="15">FG Sub Group</font></string>
+    <string name="specificinterest"><font size="15">Specific Interest</font></string>
+    <string name="partyname"><font size="15">Party Name</font></string>
+    <string name="vender"><font size="15">Vender</font></string>
+    <string name="accept"><font size="15">Accept Qty</font></string>
+    <string name="reject"><font size="15">Reject Qty</font></string>
+    <string name="contactlevel"><font size="15">Contact Level</font></string>
+    <string name="contactname"><font size="15">Contact Name</font></string>
+    <string name="contactnumber"><font size="15">Contact Number</font></string>
+    <string name="emailid"><font size="15">Email ID</font></string>
+    <string name="fgproduct"><font size="15">FG Product</font></string>
+    <string name="clientremarks"><font size="15">Client Remarks</font></string>
+    <string name="clientname"><font size="15">Client Name</font></string>
+    <string name="ourremarks"><font size="15">Our Remarks</font></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="qty"><font size="15">Qty</font></string>
+    <string name="companyreelno"><font size="15">Company Reel No.</font></string>
+    <string name="rows"><font size="15">Rows</font></string>
+    <string name="invoice"><font size="15">Invoice No.</font></string>
+    <string name="approxvalue"><font size="15">Approx Value</font></string>
+    <string name="approvedby"><font size="15">Approved By</font></string>
+    <string name="refusalreason"><font size="15">Refusal Reason</font></string>
+    <string name="referencename"><font size="15">Reference Name</font></string>
+    <string name="countryname"><font size="15">Country Name</font></string>
+    <string name="statename"><font size="15">State Name</font></string>
+    <string name="stageto"><font size="15">Stage To</font></string>
+    <string name="stagefrom"><font size="15">Stage From</font></string>
+    <string name="stage"><font size="15">Select Stage</font></string>
+    <string name="cityname"><font size="15">City Name</font></string>
+    <string name="wipstage"><font size="15">WIP Stage</font></string>
+    <string name="item"><font size="15">Item</font></string>
+    <string name="punchcode"><font size="15">Punch Code</font></string>
+    <string name="pendingbills"><font size="15">Pending Bills</font></string>
+    <string name="pendingpo"><font size="15">Pending P.O.</font></string>
+    <string name="salesmanager"><font size="15">Sales Manager</font></string>
+    <string name="estimator"><font size="15">Estimator</font></string>
+    <string name="reqno"><font size="15">Req No.</font></string>
+    <string name="packno"><font size="15">Pack No.</font></string>
+    <string name="location"><font size="15">Location</font></string>
+    <string name="contactcompany"><font size="15">Contact Company</font></string>
+    <string name="checkin"><font size="15">Check In</font></string>
+    <string name="visitor"><font size="15">Visitor Name</font></string>
+    <string name="typeofactivity"><font size="15">Type Of Activity</font></string>
+    <string name="assignedto"><font size="15">Assigned To</font></string>
+    <string name="scanjob"><font size="15">Scan Job</font></string>
+    <string name="scanreel"><font size="15">Scan Reel</font></string>
+    <string name="scan"><font size="15">Scan Bar Code</font></string>
+    <string name="meterreadingstart"><font size="15">Meter Reading Start</font></string>
+    <string name="meterreadingend"><font size="15">Meter Reading End</font></string>
+    <string name="machinecode"><font size="15">Machine QR Code</font></string>
+    <string name="machinecode2"><font size="15">Machine Code</font></string>
+    <string name="machinename"><font size="15">Machine Name</font></string>
+    <string name="complaintype"><font size="15">Complaint Type</font></string>
+    <string name="scanasset"><font size="15">Scan Asset</font></string>
+    <string name="quantity"><font size="15">Quantity</font></string>
+    <string name="condition"><font size="15">Select Condition</font></string>
+    <string name="emp_mobile"><font size="15">Mobile Number</font></string>
+    <string name="activityname"><font size="15">Activity Name</font></string>
+    <string name="scanstage"><font size="15">Scan Stage</font></string>
+    <string name="tasktopic"><font size="15">Task Topic</font></string>
+    <string name="taskgivenby"><font size="15">Task Given BY</font></string>
+    <string name="urgency"><font size="15">Urgency</font></string>
+    <string name="label"><font size="15">Select Label</font></string>
+    <string name="scanbin"><font size="15">Scan Bin</font></string>
+    <string name="jobno"><font size="15">Select Job No.</font></string>
+    <string name="jobno2"><font size="15">Job No.</font></string>
+    <string name="partno"><font size="15">Part No</font></string>
+    <string name="orderqty"><font size="15">Order Qty</font></string>
+    <string name="orderno"><font size="15">Order No./Dt</font></string>
+    <string name="vendorname"><font size="15">Vendor Name</font></string>
+    <string name="spokento"><font size="15">Spoken To</font></string>
+    <string name="process"><font size="15">Process</font></string>
+    <string name="batch"><font size="15">Batch No</font></string>
+    <string name="shift"><font size="15">Select Shift</font></string>
+    <string name="machine"><font size="15">Select Machine</font></string>
+    <string name="incharge"><font size="15">Select Incharge</font></string>
+    <string name="truckarrived"><font size="15">Truck Arrived</font></string>
+    <string name="drivername"><font size="15">Driver Name</font></string>
+    <string name="drivernumber"><font size="15">Driver Number</font></string>
+    <string name="vehiclereading"><font size="15">Vehicle Reading</font></string>
+    <string name="natureofexpense"><font size="15">Nature Of Expense</font></string>
+    <string name="contactdesignation"><font size="15">Contact Designation</font></string>
+    <string name="customername"><font size="15">Customer Name</font></string>
+    <string name="saletype"><font size="15">Select Type</font></string>
+    <string name="loadingsupervisor"><font size="15">Loading Supervisor</font></string>
+    <string name="loadingtruck"><font size="15">Loading Truck</font></string>
+    <string name="mailtocustomer"><font size="15">E-mail To Customer</font></string>
+    <string name="selectreel"><font size="15">Select Lot</font></string>
+    <string name="tag"><font size="15">TAG</font></string>
+    <string name="selectvehicle"><font size="15">Select Vehicle</font></string>
+    <string name="selecttransporter"><font size="15">Select Transporter</font></string>
+    <string name="contactperson"><font size="15">Contact Person</font></string>
+    <string name="truckdeptarture"><font size="15">Truck Departure</font></string>
+    <string name="truckarrival"><font size="15">Truck Arrival</font></string>
+    <string name="truckunload"><font size="15">Truck Unload</font></string>
+    <string name="truckstart"><font size="15">Truck Start</font></string>
+    <string name="customerdestination"><font size="15">Customer/Destination</font></string>
+    <string name="truckreturning"><font size="15">Returning Truck</font></string>
+
+    <!--  Textview Strings -->
+    <string name="txtleadsource">Lead Source<font color='#FF0000'>*</font></string>
+
+
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ccdaf4"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/txttotal_qty"
+            android:layout_width="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_height="wrap_content"
+            android:text="Qty As Per MRR : "
+            android:layout_weight="1"
+            android:textColor="#800080"
+            />
+
+        <ImageView
+            android:id="@+id/close_window"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close_window"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.1"
+            android:textColor="@color/black"
+            android:text="Accept Qty"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="3dp"
+            android:textSize="18dp"
+            />
+        <EditText
+            android:layout_marginEnd="10dp"
+            android:id="@+id/txtaccept"
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:hint="@string/accept"
+            android:background="@drawable/edittext_border_change"
+            android:inputType="numberDecimal"
+         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:text="Reject Qty"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="3dp"
+            android:textSize="18dp"
+            />
+        <EditText
+            android:layout_marginEnd="10dp"
+            android:id="@+id/txtreject"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:hint="@string/reject"
+            android:background="@drawable/edittext_border_change"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:text="Reason"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="3dp"
+            android:textSize="18dp"
+            />
+        <EditText
+            android:layout_marginEnd="10dp"
+            android:id="@+id/txtreason"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:hint="@string/reason"
+            android:background="@drawable/edittext_border_change"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#337ab7"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txterror"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:textColor="@color/danger"
+            android:text="Faliure"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="3dp"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

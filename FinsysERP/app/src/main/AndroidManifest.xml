@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.finsyswork.erp"
+    android:versionCode="10"
+    android:versionName="10">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:exported="true"
+        android:extractNativeLibs="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".DemoActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_reel_return_MCPL"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_fg_stacking_mvin"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pdfViewer"
+            android:exported="false" />
+        <activity
+            android:name=".frm_printPDF"
+            android:exported="false" />
+        <activity
+            android:name=".frm_PrintReport"
+            android:exported="false" />
+        <activity
+            android:name=".frm_dispatch_finalise_mvin"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_fg_physical"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_wip_inspection"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- android:exported="false"> -->
+        </activity>
+        <activity
+            android:name=".frm_finish_production"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_start_production"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_fg_prod_qrcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_online_inspection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_dispatch_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_reel_issue_return"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_job_status"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_fg_stacking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_daily_expense"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_crm_contacts_master"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_quotation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_sale_lead_followup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_task_done"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_task_management"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_inter_stage_tfr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_all_forms_record"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_gate_pass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_pendin_po_collection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_collection_followup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_quality_inspection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_invoice_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_visitor_out_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_visitor_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_prod_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".tesing_activity" />
+        <activity
+            android:name=".frm_sale_schedule_booking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_sale_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_reels_stacking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_attend_maintenance_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_maintenance_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".frm_digital_signature" />
+        <activity
+            android:name=".frm_truck_driver"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_record_starting_truck"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_record_loading_truck"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_record_arrival_truck"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_jobw_prod"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_bin_scanning"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".frm_approve" />
+        <activity
+            android:name=".frm_verify_asset_location"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_scaninfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_record_alectricity_usage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_job_issue_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_paper_end"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_issue_slip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_material_issue_req"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_select"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_record_expense"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".frm_visit_record" />
+        <activity
+            android:name=".frm_lead_check_out"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".frm_lead_sarfaraz"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".scannerView" />
+        <activity
+            android:name=".frm_bar_scanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".frm_lead_enquiry"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".frm_loan_pay"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".frm_adv_pay"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".frm_lv_req"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".changeprofile" />
+        <activity android:name=".changepwd" />
+        <activity android:name=".contactdetails" />
+        <activity android:name=".frm_graph" />
+        <activity android:name=".frm_approval" />
+        <activity android:name=".frm_list" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/fin1"
+            android:label=""
+            android:logo="@drawable/fin1"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1891043f7cc8339fefee426c45eec1707ef37f72" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.finsyswork.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

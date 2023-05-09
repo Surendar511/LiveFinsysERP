@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/doc_num"
+            android:layout_width="0dp"
+            android:text="vno"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/doc_dt"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:text="vdt"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/start_dt"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:text="start_dt"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/end_dt"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:text="end_dt"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

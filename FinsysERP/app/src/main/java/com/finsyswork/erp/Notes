@@ -1,0 +1,40 @@
+1) frm_paper_end   =  Reels Issue Form , Reel Issue Return
+        this Form Used Widely frm_issue_slip components like - card, Model, Adapter, Database As Well
+
+2) frm_job_issue_entry = Job Issue_Entry
+        this Form Used Widely frm_issue_slip components like - card, Model, Adapter, Database As Well
+
+3) frm_lead_sarfaraz =  Check In, Attendance Check In  Form
+
+4) frm_lead_check_out  = Check Out, Attendance Check Out Form
+
+5) frm_bar_scanner = physical verification -> Verify Reels Store.
+
+6) frm_material_issue_req =  Request Material Issue, Request Material Return, Request Material Purchase.
+
+7) frm_issue_slip = Material Issue Entry, Material Return Entry.
+
+8) frm_all_forms_record = Activity Record App.
+
+// Most Imp. Point.
+In Adapter checkbox does not support checkedChangeListerner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pop api code :-
+
+1) EP819 => Departmemnt.
+2) EP830 => Shift.
+3) EP831 => Machine Code.
+3) EP861 => Complaint Type.
